@@ -13,7 +13,7 @@
     "react-parallax-tilt": "^1.7.311",
     "react-router-dom": "^7.9.5",
     "react-scripts": "5.0.1",
-    "three": "^0.159.0"
+    "three": "^0.172.0"
   },
   "devDependencies": {
     "eslint-plugin-react-hooks": "^7.0.1",
