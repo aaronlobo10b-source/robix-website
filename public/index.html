@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ✅ Preload Font -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      />
+    </noscript>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ Site Meta -->
+    <meta name="theme-color" content="#00fff0" />
+    <meta
+      name="description"
+      content="Official Robix CRCE Website — A futuristic robotics club site built with React, Three.js, and Tron-inspired design."
+    />
+
+    <!-- ✅ Open Graph (social previews) -->
+    <meta property="og:title" content="ROBIX CRCE Robotics Club" />
+    <meta
+      property="og:description"
+      content="Explore ROBIX CRCE — where technology meets creativity. Check out our robots, projects, and team."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/robix_logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robix-crce.vercel.app" />
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ROBIX CRCE Robotics Club" />
+    <meta
+      name="twitter:description"
+      content="Explore ROBIX CRCE — where innovation meets automation."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/robix_logo.png" />
+
+    <title>ROBIX CRCE</title>
+
+    <!-- ✅ Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Model Viewer (for R2D2 3D model) -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <style>
+      /* 🌑 Full-black background to match Meet the Team */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #000; /* Matches .lanyard-section background */
+        color: #00fff6;
+        font-family: "VT323", monospace;
+        overflow-x: hidden;
+      }
+
+      #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      /* Boot (loading) screen */
+      .boot-screen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        color: #00fff6;
+        width: 100vw;
+        height: 100vh;
+        font-family: "VT323", monospace;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        animation: flicker 1.2s infinite alternate;
+        text-shadow: 0 0 10px #00fff6, 0 0 20px #00fff6;
+      }
+
+      @keyframes flicker {
+        0% {
+          opacity: 0.7;
+          text-shadow: 0 0 8px #00fff6;
+        }
+        50% {
+          opacity: 0.4;
+          text-shadow: 0 0 4px #00fff6;
+        }
+        100% {
+          opacity: 1;
+          text-shadow: 0 0 12px #00fff6, 0 0 25px #00fff6;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- React Root -->
+    <div id="root">
+      <!-- Static fallback (before React loads) -->
+      <div class="boot-screen">INITIALIZING SYSTEM...</div>
+    </div>
+  </body>
+</html>

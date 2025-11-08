@@ -1,0 +1,94 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at bottom, #222 0%, #0d0d0d 90%);
+  color: #e0e0e0;
+  font-family: "VT323", monospace;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ===== PAGE TRANSITIONS ===== */
+.page-wrapper {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00fff0, #007a72);
+  border-radius: 5px;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* ===== UNIVERSAL CARD STYLE ===== */
+.card {
+  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px #00fff0, 0 0 20px #00fff0;
+  opacity: 0.8;
+  z-index: 9999;
+  pointer-events: none;
+  color: #00fff0;
+}
+.page-wrapper {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInPage 0.8s ease forwards;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h1, h2, h3, h4, h5 {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0,255,240,0.3);
+}
+p {
+  line-height: 1.6;
+}

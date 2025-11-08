@@ -1,0 +1,139 @@
+/* LanyardMembers.css - FINAL VERSION */
+
+/* --- 1. Consolidated .lanyard-section (Key to blending) --- */
+.lanyard-section {
+  /* Set to match your HTML's <body> background color EXACTLY */
+  background: #000; 
+  
+  padding: 100px 40px;
+  color: #00fff0;
+  text-align: center;
+  min-height: 100vh;
+  font-family: "VT323", monospace;
+  
+  /* Removed: overflow-x: hidden; (This should now be handled by the HTML fix) */
+  /* Removed: All old borders, box-shadows, and the radial-gradient */
+}
+
+/* ---------------------------------------------------- */
+
+.lanyard-title {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #00fff0, 0 0 40px rgba(0, 255, 240, 0.5);
+  margin-bottom: 80px;
+}
+
+.lanyard-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* 🔹 Strap (lanyard string) */
+.lanyard-strap {
+  width: 3px;
+  height: 80px;
+  background: linear-gradient(180deg, #00fff0 0%, #007a72 100%);
+  margin: 0 auto;
+  box-shadow: 0 0 15px #00fff0;
+  border-radius: 2px;
+  animation: glow-pulse 2s infinite alternate;
+}
+
+/* 🔹 Card container with swing effect */
+.lanyard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔹 Lanyard ID (seamless strap connection) */
+.lanyard-id {
+  background: rgba(0, 10, 15, 0.9);
+  border: 2px solid #00fff0;
+  border-top: none; 
+  border-radius: 12px;
+  /* Shadow offset downward to hide the top line */
+  box-shadow: 
+    0px 10px 25px #00fff0, 
+    0px 10px 50px rgba(0, 255, 240, 0.3);
+  width: 260px;
+  padding: 30px;
+  text-align: center;
+  transform-origin: top center;
+  transition: transform 0.3s ease;
+}
+
+/* 🔹 Swing animation */
+.swing {
+  animation: swing 3s ease-in-out infinite alternate;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+/* 🔹 Square photo */
+.lanyard-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  border: 2px solid #00fff0;
+  box-shadow: 0 0 20px #00fff0;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Text styling */
+.lanyard-id h3 {
+  margin: 10px 0 5px;
+  font-size: 1.6rem;
+  text-shadow: 0 0 10px #00fff0;
+}
+
+.role {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.handle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Button */
+.contact-btn {
+  margin-top: 15px;
+  padding: 8px 18px;
+  background: transparent;
+  border: 1px solid #00fff0;
+  border-radius: 6px;
+  color: #00fff0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+}
+
+.contact-btn:hover {
+  background: #00fff0;
+  color: #000;
+  box-shadow: 0 0 20px #00fff0;
+}
+
+/* 🔹 Strap glow animation */
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 10px #00fff0;
+  }
+  100% {
+    box-shadow: 0 0 25px #00fff0;
+  }
+}

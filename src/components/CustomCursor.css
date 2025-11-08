@@ -1,0 +1,17 @@
+.neon-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00fff0;
+  box-shadow:
+    0 0 10px #00fff0,
+    0 0 20px #00fff0,
+    0 0 40px rgba(0, 255, 240, 0.8);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
+}

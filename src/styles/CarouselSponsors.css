@@ -1,0 +1,22 @@
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+.carousel-track {
+  display: flex;
+  animation: scrollLeft 30s linear infinite;
+}
+.carousel-item {
+  flex: 0 0 auto;
+  width: 150px;
+  margin-right: 20px;
+}
+.carousel-item img {
+  width: 100%;
+  object-fit: contain;
+}
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}

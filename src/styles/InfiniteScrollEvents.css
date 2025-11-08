@@ -1,0 +1,11 @@
+.infinite-scroll-container {
+  height: 400px;
+  overflow-y: scroll;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.event-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}

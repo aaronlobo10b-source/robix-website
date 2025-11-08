@@ -1,0 +1,121 @@
+.profile-card {
+  width: 270px;
+  height: 400px;
+  background: rgba(15, 15, 20, 0.85);
+  border-radius: 18px;
+  border: 1.5px solid #00fff0;
+  box-shadow: 0 0 25px #00fff0, 0 0 70px rgba(0, 255, 240, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  color: #00fff0;
+  font-family: "VT323", monospace;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 240, 0.15), transparent 70%);
+  z-index: 0;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.profile-card:hover::before {
+  opacity: 1;
+}
+
+.profile-card:hover {
+  box-shadow: 0 0 45px #00fff0, 0 0 100px rgba(0, 255, 240, 0.35);
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* === Card Inner === */
+.card-inner {
+  position: relative;
+  z-index: 1;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Avatar Frame === */
+.card-frame {
+  background: rgba(0, 255, 240, 0.15);
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 240, 0.25);
+}
+
+.card-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #00fff0;
+  box-shadow: 0 0 25px #00fff0;
+  object-fit: cover;
+}
+
+/* === Text Info === */
+.card-name {
+  font-size: 1.6rem;
+  margin: 15px 0 5px;
+  text-shadow: 0 0 10px #00fff0;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.card-handle {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+/* === Status === */
+.status {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 1rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid currentColor;
+}
+
+.status.online {
+  color: #00ff88;
+}
+
+.status.offline {
+  color: #ff5c5c;
+}
+
+/* === Contact Button === */
+.contact-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid #00fff0;
+  border-radius: 8px;
+  color: #00fff0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.contact-btn:hover {
+  background: #00fff0;
+  color: #000;
+  box-shadow: 0 0 15px #00fff0;
+}

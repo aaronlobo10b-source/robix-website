@@ -1,0 +1,13 @@
+.falling-text-container {
+  text-align: center;
+  padding: 100px 0;
+}
+.fallingText {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #555;
+}

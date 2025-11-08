@@ -1,0 +1,219 @@
+/* === INTRO PAGE BASE === */
+.intro-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #00fff0;
+  font-family: "VT323", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px; /* 🔹 Added padding for breathing space */
+}
+
+/* === SPACE BACKGROUND === */
+.space-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.45;
+  animation: bg-pan 40s linear infinite;
+}
+
+@keyframes bg-pan {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.05) translate(-1%, -1%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+/* === ROBIX LOGO === */
+.robix-logo {
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  width: 130px; /* Larger Robix logo */
+  height: auto;
+  z-index: 15;
+  filter: drop-shadow(0 0 18px #00eaff);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.robix-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 30px #00ffff);
+}
+
+/* === INSTAGRAM IMAGE ICON === */
+.instagram-icon {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 65px; /* 🔹 Reduced from 80px to the original smaller size */
+  height: 65px;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.instagram-icon:hover {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 30px #00eaff);
+}
+
+.instagram-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px #00eaff);
+  animation: pulseGlow 3s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+  from {
+    filter: drop-shadow(0 0 14px #00eaff);
+  }
+  to {
+    filter: drop-shadow(0 0 34px #00ffff);
+  }
+}
+
+/* === SCENE CONTAINER === */
+.scene-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 850px; /* Slightly wider */
+  padding: 40px 0; /* 🔹 Added vertical padding for spacing */
+  z-index: 2;
+  position: relative;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+/* === BOT TEXTBOX === */
+.bot-textbox {
+  width: 95%; /* slightly wider */
+  max-width: 850px;
+  border: 2px solid #00fff0;
+  border-radius: 12px;
+  padding: 25px; /* 🔹 increased for visibility */
+  margin-bottom: 40px; /* extra spacing above R2D2 */
+  background: rgba(0, 10, 15, 0.75);
+  text-align: center;
+  box-shadow:
+    0 0 15px #00fff0,
+    0 0 40px rgba(0, 255, 240, 0.2);
+}
+
+.bot-textbox p {
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+  color: #00fff0;
+  text-shadow: 0 0 8px #00fff0;
+}
+
+.next-btn {
+  border: 1px solid #00fff0;
+  background: transparent;
+  color: #00fff0;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-shadow: 0 0 10px #00fff0;
+  transition: all 0.25s ease;
+}
+
+.next-btn:hover {
+  background: #00fff0;
+  color: #000;
+  box-shadow: 0 0 15px #00fff0, 0 0 30px #00fff0;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu-buttons button {
+  border: 1px solid #00fff0;
+  background: transparent;
+  color: #00fff0;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-shadow: 0 0 10px #00fff0;
+  transition: all 0.25s ease;
+}
+
+.menu-buttons button:hover {
+  background: #00fff0;
+  color: #000;
+  box-shadow: 0 0 15px #00fff0, 0 0 30px #00fff0;
+}
+
+/* === BOT CONTAINER === */
+.bot-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+  background: transparent;
+}
+
+/* === GLOW FLOOR === */
+.model-glow-floor {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(0, 255, 240, 0.3) 0%, transparent 70%);
+  filter: blur(25px);
+  z-index: -1;
+}
+
+/* === FADE TO BLACK OVERLAY === */
+.fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease-in-out;
+  z-index: 9999;
+}
+
+.fade-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
