@@ -8,10 +8,6 @@
 
 ---
 
-## 🚀 Live Demo  
-> *(Coming soon once deployed to Vercel)*  
-https://robix-crce.vercel.app  
-
 ---
 
 ## 🧩 Features
@@ -76,18 +72,9 @@ If you’d like to collaborate, open a PR or reach out through GitHub Issues.
 
 ---
 
-### ✅ Step 3:
-Select **“Commit directly to the main branch”**  
-and click **“Commit new file”**
 
----
-
-Once you commit it, your GitHub repo will look **professional and portfolio-ready** 🎯  
-
-Would you like me to include a **preview image/banner** (a wide neon-style image to show off the site at the top of your README)?
 ## 🌐 Live Demo
-[View the site here](https://robix-website.netlify.app)
-
+[View the site here]https://69107d19ebf4dd9c17cd327a--robix-website.netlify.app/
 ## 🧩 Tech Stack
 - React (Create React App)
 - Three.js + @google/model-viewer
