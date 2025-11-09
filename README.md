@@ -1,39 +1,29 @@
 # 🤖 ROBIX CRCE — Official Robotics Club Website
 
-> A futuristic, Tron-inspired web experience built with **React**, **Three.js**, and **modern animations**.
+A futuristic, Tron-inspired React website for the **ROBIX CRCE Robotics Club**, showcasing our team, projects, and sponsors.
 
-![Tech](https://img.shields.io/badge/Built%20With-React%20%26%20Three.js-00fff0?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+![Site Preview](public/site-preview.png)
 
----
-
----
-
-## 🧩 Features
-- ⚡ Neon-themed 3D intro scene with interactive R2D2 bot  
-- 🛰 Smooth animated page transitions  
-- 🧠 Responsive sidebar navigation (hamburger menu)  
-- 🪩 Dynamic sections for Projects, Events, Sponsors, and Team  
-- 🪪 Lanyard-style team cards with tilt and glow effects  
-- 🌌 Custom cursor & futuristic Tron-style UI  
+🔗 **Live Demo:** [View Website](https://robix-crce.netlify.app)  
+📦 **Tech Stack:** React, Three.js, Model Viewer, Custom CSS animations
 
 ---
 
-## 🛠️ Tech Stack
-| Category | Tools Used |
-|-----------|-------------|
-| **Frontend** | React 18, React Router DOM |
-| **3D Graphics** | Three.js, @react-three/fiber, Model-Viewer |
-| **Styling** | CSS3, VT323 + Orbitron Fonts |
-| **Hosting** | Vercel / GitHub Pages (optional) |
+### ✨ Features
+- Interactive 3D intro robot animation  
+- Neon sidebar navigation  
+- Dynamic sections for events, sponsors, and team members  
+- Responsive and lightweight design  
 
 ---
 
-## 🧠 Getting Started
-
-Clone and run locally:
+### 🚀 Local Setup
 ```bash
+git clone https://github.com/aaronlobo10b-source/robix-website.git
+cd robix-website
+npm install
+npm start
+
 git clone https://github.com/aaronlobo10b-source/robix-website.git
 cd robix-website
 npm install
