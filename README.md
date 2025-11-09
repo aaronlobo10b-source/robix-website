@@ -88,3 +88,14 @@ and click **“Commit new file”**
 Once you commit it, your GitHub repo will look **professional and portfolio-ready** 🎯  
 
 Would you like me to include a **preview image/banner** (a wide neon-style image to show off the site at the top of your README)?
+## 🌐 Live Demo
+[View the site here](https://robix-website.netlify.app)
+
+## 🧩 Tech Stack
+- React (Create React App)
+- Three.js + @google/model-viewer
+- CSS Neon Effects
+- Hosted on Netlify
+
+## 🚀 About
+Official Robix CRCE Robotics Club Website — featuring interactive 3D visuals, event listings, and team showcases.
