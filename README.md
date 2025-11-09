@@ -65,9 +65,6 @@ src/
  ├── App.jsx
  ├── index.jsx
  └── index.css
-🧑‍💻 Author
-
-Aaron Lobo
 
 Robotics enthusiast & front-end developer
 📜 License
@@ -99,3 +96,8 @@ Would you like me to include a **preview image/banner** (a wide neon-style image
 
 ## 🚀 About
 Official Robix CRCE Robotics Club Website — featuring interactive 3D visuals, event listings, and team showcases.
+🧑‍💻 Developer
+
+Aaron Lobo
+Front-End Developer | UI/UX & 3D Web Enthusiast this website is still under development and is being msde for the robotics club of my college called Robix (Fr. Conceciao Rodrigues College Of ENgineering, Bandra, India)
+⭐ If you like this project, consider giving it a star — it helps a lot!
