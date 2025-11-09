@@ -101,3 +101,4 @@ Official Robix CRCE Robotics Club Website — featuring interactive 3D visuals, 
 Aaron Lobo
 Front-End Developer | UI/UX & 3D Web Enthusiast this website is still under development and is being msde for the robotics club of my college called Robix (Fr. Conceciao Rodrigues College Of ENgineering, Bandra, India)
 ⭐ If you like this project, consider giving it a star — it helps a lot!
+SIDE NOTE:I AM NOT GONNA USE THE R2D2 MODEL PERMNENATLY IT WILL SOON BE REPLACED BY A #D MODEL OF A BOT MADE BY THE CLUB OTHER BOTS WILL ALSO BE DSIPLAYED IN THE PROJECTS SECTION
